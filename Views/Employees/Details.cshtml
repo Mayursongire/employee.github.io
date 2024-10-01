@@ -1,0 +1,80 @@
+﻿@model EmployeeManagementCRUD.Models.Employee
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Employee Details</h1>
+
+    <hr />
+    <div class="row">
+    <table class="table table-bordered table-hover table-responsive-lg">
+        <tr>
+        <th class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th class = "col-sm-10">
+            @Html.DisplayFor(model => model.FirstName)
+        </th>
+        </tr>
+
+        <tr>
+        <th class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MiddleName)
+        </th>
+        <th class = "col-sm-10">
+            @Html.DisplayFor(model => model.MiddleName)
+        </th>
+        </tr>
+
+        <tr>
+        <th class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th class = "col-sm-10">
+            @Html.DisplayFor(model => model.LastName)
+        </th>
+        </tr>
+
+        <tr>
+        <th class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </th>
+        <th class = "col-sm-10">
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </th>
+        </tr>
+
+        <tr>
+        <th class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </th>
+        <th class = "col-sm-10">
+            @Html.DisplayFor(model => model.EmailAddress)
+        </th>
+        </tr>
+
+        <tr>
+        <th class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th class = "col-sm-10">
+            @Html.DisplayFor(model => model.Gender)
+        </th>
+        </tr>
+
+        <tr>
+        <th class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Country)
+        </th>
+        <th class = "col-sm-10">
+            @Html.DisplayFor(model => model.Country)
+        </th>
+        </tr>
+    </table>
+    </div>
+<div class="row p-3">
+    <div class="form-group">|
+    <a class="btn btn-warning float-start" asp-action="Index">Back to List</a>
+    </div>
+</div>
